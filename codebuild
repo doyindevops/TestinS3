@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Running build step..."
+      - mkdir output
+      - echo "Hello from CodeBuild" > output/hello.txt
+
+artifacts:
+  files:
+    - output/**/*
